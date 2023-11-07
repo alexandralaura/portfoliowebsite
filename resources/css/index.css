@@ -1,0 +1,47 @@
+header h1 {
+    font-weight: bold;
+    width: 300px;
+}
+header nav {
+    
+   position: relative;
+   top: 20px;
+    
+}
+header nav li {
+    display: inline-block;
+    padding-right: 10px ;
+    font-weight: 900;
+}
+header {
+    
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content {
+    
+}
+.two {
+   
+}
+img.align-right {
+ float: right;
+}
+article.thisclass {
+    position: relative;
+    top: 40px;
+}
+article.otherclass {
+    position: relative;
+    top: 40px;
+}
+footer {
+    text-align: center;
+    margin: auto 0;
+
+}
