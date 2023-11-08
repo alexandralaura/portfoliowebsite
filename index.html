@@ -28,13 +28,96 @@
                 <p>Hi, I'm Alexandra Irwin. I have 3 degrees in physics, a diploma of education and am currently learning to code by doing the full stack course on Codecademy. In my free time I like to read. I just finished reading Traveling the Globe by Mark Twain. I really enjoyed this book because the author is so intelligent and observant. I have recently been improving my fitness with walking and swimming. Right now it is the end of spring and the garden is in flower. </p>
 
             </article>
+        </div id= "projects">    
             <article class="thisclass">
                 <h2 >Projects</h2>
-                <ul>
-                    <li>Piano Keys</li>
-                    <li>Mixed Messages</li>
-                    <li>Credit Card Checker</li>
-                </ul>
+                <img src="resources/images/Web capture_8-11-2023_11616_www.codecademy.com.jpeg" alt="desktop coding environment" title="desktop coding environment"  height="825" width="1360"/>
+                <h2>Piano Keys</h2>  
+                <p>The aim of this project is to create an interactive game to help a beginner level piano student. I created a piano player with DOM events in JavaScript.
+                    I created a function that changes the background color of the keys when they are pushed down. <br/> function keyPlay(Event) { <br/>
+                        Event.Target.style.backgroundColor = 'red';
+                    }; <br/>
+                    I created a function named keyReturn that returns the background colour of the keys to their default when the mouse is released. <br/>
+                    function keyReturn(Event) { <br/>
+                        Event.Target.style.backgroundColor = '';
+                    }; <br/>
+                    These functions are now used as event handler properties. <br/>
+                    function functionname(note) { <br/>
+                        note.addEventListener('mousedown', keyPlay);<br/>
+                        note.addEventListener('mouseup', keyReturn);
+                       };
+                       Now I create a function that passes my notes array through my event handler function.<br/> 
+                       notes.forEach(functionname); <br/>
+                       At this stage the program knows what to do when each key has a mousedown or mouseup event fired on it.<br/>
+                       There are progress buttons at the bottom of the piano that help the students play along. I create events on all the progress buttons, as I do this I also have to change the notes that are to be played.<br/>let nextOne = document.getElementById('first-next-line');
+                       let nextTwo = document.getElementById('second-next-line');<br/>
+                       let nextThree = document.getElementById('third-next-line');<br/>
+                       let startOver = document.getElementById('fourth-next-line');<br/>
+                       nextOne.addEventListener('click', function () {<br/>
+                         nextTwo.hidden = false;<br/>
+                         nextOne.hidden = true;<br/>
+                         document.getElementById('letter-note-five').innerHTML = 'D'; <br/>
+                         document.getElementById('letter-note-six').innerHTML = 'C';<br/>
+                       });<br/>
+                       nextTwo.onclick = function () {<br/>
+                        nextThree.hidden = false;<br/>
+                        nextTwo.hidden = true;<br/>
+                        document.getElementById('word-five').innerHTML = 'DEAR';<br/>
+                        document.getElementById('word-six').innerHTML = 'FRI-';<br/>
+                        lastLyric.style.display = 'inline-block';<br/>
+                        document.getElementById('letter-note-three').innerHTML = 'G';<br/>
+                        document.getElementById('letter-note-four').innerHTML = 'E';<br/>
+                        document.getElementById('letter-note-five').innerHTML = 'C';<br/>
+                        document.getElementById('letter-note-six').innerHTML = 'B';<br/>
+                       };<br/>
+                       nextThree.onclick = function () {<br/>
+                         startOver.hidden = false;<br/>
+                         nextThree.hidden = true;<br/>
+                         document.getElementById('word-one').innerHTML = 'HAP-';<br/>
+                         document.getElementById('word-two').innerHTML = 'PY';<br/>
+                         document.getElementById('word-three').innerHTML = 'BIRTH';<br/>
+                         document.getElementById('word-four').innerHTML = 'DAY';<br/>
+                         document.getElementById('word-five').innerHTML = 'TO';<br/>
+                         document.getElementById('word-six').innerHTML = 'YOU!';<br/>
+                         document.getElementById('letter-note-one').innerHTML = 'F';<br/>
+                         document.getElementById('letter-note-two').innerHTML = 'F';<br/>
+                         document.getElementById('letter-note-three').innerHTML = 'E';<br/>
+                         document.getElementById('letter-note-four').innerHTML = 'C';<br/>
+                         document.getElementById('letter-note-five').innerHTML = 'D';<br/>
+                         document.getElementById('letter-note-six').innerHTML = 'C';<br/>
+                         lastLyric.style.display = 'none';<br/>
+                       }<br/>
+                       // This variable stores the '-END' lyric element<br/>
+                       let lastLyric = document.getElementById('column-optional');<br/>
+                       <br/>
+                       // These statements are "hiding" all the progress buttons, but the first one<br/>
+                       nextTwo.hidden = true;<br/>
+                       nextThree.hidden = true;<br/>
+                       startOver.hidden= true;<br/>
+                       <br/>
+                       
+                       
+                       
+                       // This is the event handler property and function for the startOver button<br/>
+                       startOver.onclick = function() {<br/>
+                         nextOne.hidden = false;<br/>
+                         startOver.hidden = true;<br/>
+                          document.getElementById('word-one').innerHTML = 'HAP-';<br/>
+                         document.getElementById('letter-note-one').innerHTML = 'G';<br/>
+                         document.getElementById('word-two').innerHTML = 'PY';<br/>
+                         document.getElementById('letter-note-two').innerHTML = 'G';<br/>
+                         document.getElementById('word-three').innerHTML = 'BIRTH-';<br/>
+                         document.getElementById('letter-note-three').innerHTML = 'A';<br/>
+                         document.getElementById('word-four').innerHTML = 'DAY';<br/>
+                         document.getElementById('letter-note-four').innerHTML = 'G';<br/>
+                         document.getElementById('word-five').innerHTML = 'TO';<br/>
+                         document.getElementById('letter-note-five').innerHTML = 'C';<br/>
+                         document.getElementById('word-six').innerHTML = 'YOU!';<br/>
+                         document.getElementById('letter-note-six').innerHTML = 'B';<br/>
+                       } <br/>
+
+
+                </p>            
             </article>
             <article class="otherclass">
                 <h2>Skills</h2>
@@ -45,9 +128,10 @@
                     <li>Git</li>
                     <li>GitHub</li>
                     <li>Visual Studio Code</li>
+                    <li>The Command Line</li>
                 </ul>
             </article>
-        </div>
+        
         
         <footer>Made with Love in Warranwood</footer>
     </div>
