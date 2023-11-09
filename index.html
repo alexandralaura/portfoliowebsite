@@ -28,7 +28,8 @@
                 <p>Hi, I'm Alexandra Irwin. I have 3 degrees in physics, a diploma of education and am currently learning to code by doing the full stack course on Codecademy. In my free time I like to read. I just finished reading Traveling the Globe by Mark Twain. I really enjoyed this book because the author is so intelligent and observant. I have recently been improving my fitness with walking and swimming. Right now it is the end of spring and the garden is in flower. </p>
 
             </article>
-        </div id= "projects">    
+        </div> 
+        <div id="projects">   
             <article class="thisclass">
                 <h2 >Projects</h2>
                 <img src="resources/images/Web capture_8-11-2023_11616_www.codecademy.com.jpeg" alt="desktop coding environment" title="desktop coding environment"  height="825" width="1360"/>
@@ -115,9 +116,91 @@
                          document.getElementById('word-six').innerHTML = 'YOU!';<br/>
                          document.getElementById('letter-note-six').innerHTML = 'B';<br/>
                        } <br/>
+                 For this project I used HTML, CSS, and JavaScript.
 
+                </p> 
+                <img src="resources/images/Web capture_8-11-2023_1188_www.codecademy.com.jpeg" alt="computer environment"/>
+                <h2>Mixed Messages</h2>
+                <p>The purpose of this project is to generate a random message using JavaScript. I used Git version control. I used the command line. I developed locally on the my computer using Visual Studio Code. Every time a user runs a program, they get a randomized message.
+                  <br/>  let spaceship = {<br/>
+                        one: 'Your sign is ',<br/>
+                        two: 'You are having ',<br/>
+                        three: 'You should: ',<br/>
+                        sign: ['Aries', 'Pisces', 'Scorpio', 'Libra','Aquarius', 'Cancer', 'Gemini', 'Leo', 'Taurus', 'Virgo', 'Capricorn', 'Sagittarius'],<br/>
+                        luck: ['good', 'bad', 'the best'],<br/>
+                        should: ['Trust no one', 'Start running to the airport now', 'Leave the country now'],<br/>
+                        message () {<br/>
+                          const randomElement = spaceship.sign[Math.floor(Math.random() * spaceship.sign.length)];<br/>  
+                       const randomLuck = spaceship.luck[Math.floor(Math.random() * spaceship.luck.length)];<br/>
+                       const randomshould = spaceship.should[Math.floor(Math.random() * spaceship.should.length)];<br/>
+                       switch (randomElement) {<br/>
+                        case 'Aries':<br/>
+                        console.log(spaceship.one + 'aries.');<br/>
+                        break;<br/>
+                        case 'Pisces':<br/>
+                        console.log(spaceship.one + 'pisces.');<br/>
+                        break;<br/>
+                        case 'Scorpio':<br/>
+                        console.log(spaceship.one + 'scorpio.');<br/>
+                        break;<br/>
+                         case 'Libra':<br/>
+                        console.log(spaceship.one + 'libra.');<br/>
+                        break;<br/>
+                         case 'Aquarius':<br/>
+                        console.log(spaceship.one + 'aquarius.');<br/>
+                        break;<br/>
+                         case 'Gemini':<br/>
+                        console.log(spaceship.one + 'gemini.');<br/>
+                        break;<br/>
+                       case 'Leo':<br/>
+                        console.log(spaceship.one + 'leo.');<br/>
+                        break;<br/>
+                         case 'Taurus':<br/>
+                        console.log(spaceship.one + 'taurus.');<br/>
+                        break;<br/>
+                         case 'Virgo':<br/>
+                        console.log(spaceship.one + 'virgo.');<br/>
+                        break;<br/>
+                         case 'Capricorn':<br/>
+                        console.log(spaceship.one + 'capricorn.');<br/>
+                        break;<br/>
+                         case 'Sagittarius':<br/>
+                        console.log(spaceship.one + 'sagittarius.');<br/>
+                        break;<br/>
+                        default:<br/>
+                        console.log('Opps, something went wrong.')<br/>
 
-                </p>            
+                        
+                        
+                      }<br/>
+                      switch (randomLuck) {<br/>
+                        case 'good':<br/>
+                        console.log(spaceship.two + 'good luck.');<br/>
+                        break;<br/>
+                        case 'bad':<br/>
+                        console.log(spaceship.two + 'bad luck.');<br/>
+                        break;<br/>
+                        case 'the best':<br/>
+                        console.log(spaceship.two + 'the best luck.');<br/>
+                        break;<br/>
+                      }<br/>
+                      switch (randomshould) {<br/>
+                        case 'Trust no one':<br/>
+                        console.log('You should trust no one.');<br/>
+                        break;<br/>
+                        case 'Start running to the airport now':<br/>
+                        console.log('You should start running to the airport now.');<br/>
+                        break;<br/>
+                        case 'Leave the country now':<br/>
+                        console.log('You should leave the country now.');<br/>
+                        break;<br/>
+                      }<br/>
+                        }<br/>
+                      };<br/>
+                      spaceship.message();<br/>
+                    
+                <br/>
+                </p>           
             </article>
             <article class="otherclass">
                 <h2>Skills</h2>
@@ -132,7 +215,7 @@
                 </ul>
             </article>
         
-        
+        </div>
         <footer>Made with Love in Warranwood</footer>
     </div>
     

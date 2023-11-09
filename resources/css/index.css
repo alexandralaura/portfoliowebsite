@@ -31,16 +31,19 @@ body {
 }
 img.align-right {
  float: right;
+ margin-left: 5%;
 }
 article.thisclass {
     position: relative;
-    top: 40px;
+    top: 160px;
 }
 article.otherclass {
     position: relative;
-    top: 40px;
+    top: 160px;
 }
 footer {
+    position: relative;
+    top: 233px;
     text-align: center;
     margin: auto 0;
 
