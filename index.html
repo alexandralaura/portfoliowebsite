@@ -200,6 +200,71 @@
                       spaceship.message();<br/>
                     
                 <br/>
+                </p>
+                <img src="resources/images/Web capture_8-11-2023_11928_www.codecademy.com.jpeg" />
+                <h2>Mysterious Organism</h2>
+                <p>For this Codecademy project I part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study. I created a factory function that mutated a strand of the dna. I created a compare function to compare two stands of dna. I created a willlikely survive method that determines if a dna sequence will survive.
+                  const pAequorFactory = (number, array) => {<br/>
+                    return {<br/>
+                      specimenNum: number,<br/>
+                      dna: array,<br/>
+                      mutate() {<br/>
+                        let randomnumber = Math.floor(Math.random()*15);<br/>
+                        console.log(randomnumber);<br/>
+                        let currentbase = this.dna[randomnumber];<br/>
+                        console.log(currentbase);<br/>
+                        if (currentbase === 'A') {<br/>
+                          currentbase = 'T';<br/>
+                        } else if (currentbase === 'C') {<br/>
+                          currentbase = 'G';<br/>
+                        } else if (currentbase === 'G') {<br/>
+                          currentbase = 'T';<br/>
+                        } else {<br/>
+                          currentbase = 'G';<br/>
+                        } <br/>
+                        console.log(currentbase);<br/>
+                        this.dna[randomnumber] = currentbase;<br/>
+                        return this.dna;<br/>
+                      },<br/>
+                      compareDNA(object) {<br/>
+                      let count = 0; <br/>
+                      console.log(this.specimenNum);<br/>
+                    <for(let i=0; i<15; i++) { <br/>
+                    console.log(this.dna[i]);<br/>
+                    console.log(object.dna[i])<br/>
+                    console.log('are the 2 above letters the same?')<br/>
+                    if (this.dna[i] === object.dna[i]) {<br/>
+                      console.log('Both arrays have the letter: ' + object.dna[i]);<br/>
+                      count++;<br/>
+                    }<br/>
+                  }<br/>
+                  let percentage = Math.round((count/15)*100);<br/>
+                  console.log('Specimen #' + this.specimenNum + ' and Specimen #' + object.specimenNum + ' have ' + percentage + '% DNA in common.');
+                  },<br/>
+                    willLikelySurvive() {<br/>
+                      let counter = 0;<br/>
+                      for (let i=0; i<15; i++) {
+                        if (this.dna[i] === 'G' || this.dna === 'C') {
+                          counter++
+                        }
+                      }
+                        //console.log(counter)
+                        let percentage = (counter/15)*100;
+                        //console.log(percentage)
+                        if (percentage >= 60) {-->
+                          //console.log('true')<br/>
+                          return true;<br/>
+                          
+                        } else {<br/>
+                          //console.log('false')<br/>
+                          return false;<br/>
+                          
+                        }<br/>
+                      
+                    }<br/>
+                    }<br/>
+                  //}<br/>
+                  To build this project I used JavaScript and node.js.
                 </p>           
             </article>
             <article class="otherclass">
