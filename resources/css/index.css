@@ -48,3 +48,7 @@ footer {
     margin: auto 0;
 
 }
+ul li {
+    display: inline-block;
+    padding-right: 4%;
+}
