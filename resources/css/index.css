@@ -34,8 +34,9 @@ img.align-right {
  margin-left: 5%;
 }
 article.thisclass {
-    position: relative;
-    top: 160px;
+    posit: relative;
+    to: 160px;
+    ;
 }
 article.otherclass {
     position: relative;
@@ -51,4 +52,14 @@ footer {
 ul li {
     display: inline-block;
     padding-right: 4%;
+}
+#projects {
+    display:flex;
+    width: 50%;
+    max-width: 100%;
+}
+article.thisclass img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
