@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: aqua;
 }
 header h1 {
     font-weight: bold;
@@ -9,8 +10,8 @@ header h1 {
 }
 header nav {
     padding-top: 20px;
-   pos: relative;
-   to: 20px;
+   position: relative;
+   top: 20px;
     
 }
 header nav li {
@@ -37,10 +38,11 @@ body {
 img.align-right {
  float: right;
  margin-left: 5%;
+ z-index: 1;
 }
 article.thisclass {
-    posit: relative;
-    to: 160px;
+    position: relative;
+    top: 160px;
     ;
 }
 article.otherclass {
@@ -59,16 +61,42 @@ ul li {
     padding-right: 4%;
 }
 #projects {
-    display:flex;
-    width: 50%;
-    max-width: 100%;
+    position: relative;
+    top: 140px;
+    
 }
 article.thisclass img {
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    width: ;
+    height: ;
+    object-fit: tain;
     margin: 10px auto;
 }
 .container {
     margin: 0 auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.col {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col img {
+    max-width: 100%;
+}
+.turtlecontainer img {
+    max-width: 100%;
+}
+#secondturtle {
+    float: right;
+    margin-left: 5%;
+    position: relative;
+    bottom: 0px;
+    z-index: 0;
+    display: none;
+
 }
