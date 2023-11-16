@@ -69,3 +69,6 @@ article.thisclass img {
     object-fit: contain;
     margin: 10px auto;
 }
+.container {
+    margin: 0 auto;
+}
