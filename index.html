@@ -36,23 +36,23 @@
           <div class="container">  
             
             
-                <h2 >Projects</h2>
-            <div class="main">
-             <div class="spacer"   
-                <div class="cards">
-                 <div class="col">
-                  <img src="resources/images/Web capture_8-11-2023_11616_www.codecademy.com.jpeg" alt="desktop coding environment" title="desktop coding environment"  height="825" width="1360"/>
-                  <h2>Piano Keys</h2>  
-                  <p>The aim of this project is to create an interactive game to help a beginner level piano student. I created a piano player with DOM events in JavaScript.
-                    I created a function that changes the background color of the keys when they are pushed down. <br/> function keyPlay(Event) { <br/>
+            <h2 >Projects</h2>
+             <div class="main">
+                <div class="spacer"   
+                  <div class="cards">
+                    <div class="col">
+                     <img src="resources/images/Web capture_8-11-2023_11616_www.codecademy.com.jpeg" alt="desktop coding environment" title="desktop coding environment"  height="825" width="1360"/>
+                     <h2>Piano Keys</h2>  
+                     <p>The aim of this project is to create an interactive game to help a beginner level piano student. I created a piano player with DOM events in JavaScript.
+                      I created a function that changes the background color of the keys when they are pushed down. <br/> function keyPlay(Event) { <br/>
                         Event.Target.style.backgroundColor = 'red';
-                    }; <br/>
-                    I created a function named keyReturn that returns the background colour of the keys to their default when the mouse is released. <br/>
-                    function keyReturn(Event) { <br/>
+                        }; <br/>
+                         I created a function named keyReturn that returns the background colour of the keys to their default when the mouse is released. <br/>
+                         function keyReturn(Event) { <br/>
                         Event.Target.style.backgroundColor = '';
-                    }; <br/>
-                    These functions are now used as event handler properties. <br/>
-                    function functionname(note) { <br/>
+                         }; <br/>
+                       These functions are now used as event handler properties. <br/>
+                        function functionname(note) { <br/>
                         note.addEventListener('mousedown', keyPlay);<br/>
                         note.addEventListener('mouseup', keyReturn);
                        };
@@ -125,17 +125,17 @@
                          document.getElementById('word-six').innerHTML = 'YOU!';<br/>
                          document.getElementById('letter-note-six').innerHTML = 'B';<br/>
                        } <br/>
-                 For this project I used HTML, CSS, and JavaScript.
+                          For this project I used HTML, CSS, and JavaScript.
 
-                </p>
-              </div>
+                        </p>
+                    </div>
             
             
-              <div class="col">       
-                <img src="resources/images/Web capture_8-11-2023_1188_www.codecademy.com.jpeg" alt="computer environment"/>
-                <h2>Mixed Messages</h2>
-                <p>The purpose of this project is to generate a random message using JavaScript. I used Git version control. I used the command line. I developed locally on the my computer using Visual Studio Code. Every time a user runs a program, they get a randomized message.
-                  <br/>  let spaceship = {<br/>
+                    <div class="col">       
+                      <img src="resources/images/Web capture_8-11-2023_1188_www.codecademy.com.jpeg" alt="computer environment"/>
+                      <h2>Mixed Messages</h2>
+                      <p>The purpose of this project is to generate a random message using JavaScript. I used Git version control. I used the command line. I developed locally on the my computer using Visual Studio Code. Every time a user runs a program, they get a randomized message.
+                      <br/>  let spaceship = {<br/>
                         one: 'Your sign is ',<br/>
                         two: 'You are having ',<br/>
                         three: 'You should: ',<br/>
@@ -212,17 +212,17 @@
                       };<br/>
                       spaceship.message();<br/>
                     
-                <br/>
-                </p>
-              </div>  
+                      <br/>
+                       </p>
+                    </div>  
             
             
-              <div class ="col">     
-                <img src="resources/images/Web capture_8-11-2023_11928_www.codecademy.com.jpeg" />
-                <h2>Mysterious Organism</h2>
-                <p>For this Codecademy project I part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study. I created a factory function that mutated a strand of the dna. I created a compare function to compare two stands of dna. I created a willlikely survive method that determines if a dna sequence will survive.
-                  const pAequorFactory = (number, array) => {<br/>
-                    return {<br/>
+                   <div class ="col">     
+                     <img src="resources/images/Web capture_8-11-2023_11928_www.codecademy.com.jpeg" />
+                     <h2>Mysterious Organism</h2>
+                     <p>For this Codecademy project I part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study. I created a factory function that mutated a strand of the dna. I created a compare function to compare two stands of dna. I created a willlikely survive method that determines if a dna sequence will survive.
+                      const pAequorFactory = (number, array) => {<br/>
+                      return {<br/>
                       specimenNum: number,<br/>
                       dna: array,<br/>
                       mutate() {<br/>
@@ -246,19 +246,19 @@
                       compareDNA(object) {<br/>
                       let count = 0; <br/>
                       console.log(this.specimenNum);<br/>
-                    <for(let i=0; i<15; i++) { <br/>
-                    console.log(this.dna[i]);<br/>
-                    console.log(object.dna[i])<br/>
-                    console.log('are the 2 above letters the same?')<br/>
-                    if (this.dna[i] === object.dna[i]) {<br/>
+                      <for(let i=0; i<15; i++) { <br/>
+                      console.log(this.dna[i]);<br/>
+                      console.log(object.dna[i])<br/>
+                      console.log('are the 2 above letters the same?')<br/>
+                      if (this.dna[i] === object.dna[i]) {<br/>
                       console.log('Both arrays have the letter: ' + object.dna[i]);<br/>
                       count++;<br/>
-                    }<br/>
-                  }<br/>
-                  let percentage = Math.round((count/15)*100);<br/>
-                  console.log('Specimen #' + this.specimenNum + ' and Specimen #' + object.specimenNum + ' have ' + percentage + '% DNA in common.');
-                  },<br/>
-                    willLikelySurvive() {<br/>
+                      }<br/>
+                       }<br/>
+                      let percentage = Math.round((count/15)*100);<br/>
+                       console.log('Specimen #' + this.specimenNum + ' and Specimen #' + object.specimenNum + ' have ' + percentage + '% DNA in common.');
+                       },<br/>
+                      willLikelySurvive() {<br/>
                       let counter = 0;<br/>
                       for (let i=0; i<15; i++) {
                         if (this.dna[i] === 'G' || this.dna === 'C') {
@@ -278,15 +278,15 @@
                           
                         }<br/>
                       
-                    }<br/>
-                    }<br/>
-                  //}<br/>
-                  To build this project I used JavaScript and node.js.
-                </p>           
+                     }  <br/>
+                      }<br/>
+                      //}<br/>
+                      To build this project I used JavaScript and node.js.
+                       </p>           
+                    </div>
+                  </div>  
+                </div>
               </div>
-                </div>  
-              </div>
-             </div>
           </div>  
         </div>  
         <div class="container">
