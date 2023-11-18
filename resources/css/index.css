@@ -5,27 +5,43 @@ body {
 }
 header h1 {
     font-weight: bold;
-    width: 300px;
+    width: 50%;
     padding-top: 20px;
+    padding-bottom: 10%;
+}
+header h1 #howdy {
+    width: 50%;
+}
+#helloworld {
+    line-height: 2;
+    
+}
+#getthis {
+    width: 50%;
 }
 header nav {
-    padding-top: 20px;
+    padding-top: 2.5%;
    position: relative;
-   top: 20px;
-    
+   top: 1.3%;
+   width: 30%;
 }
 header nav li {
     display: inline-block;
-    padding-right: 10px ;
+    padding-right: 0.6% ;
     font-weight: 900;
+
 }
 header {
     
     display: flex;
+   
     justify-content: space-between;
 }
+h2 {
+    margin-top: 0;
+}
 body {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -35,23 +51,50 @@ body {
 .two {
    
 }
+div.turtlecontainer {
+    margin: 0 0 0 0 ;
+    max-width: 100%;
+    padding: 0;
+    
+}
+.turtlecontainer img {
+    max-width: 100%;
+    padding: 0;
+    object-fit: contain;
+    
+}
+img #firstturtle {
+    width: 100%;
+}
+img #secondturtle {
+    width:100%;
+    object-fit: contain;
+    max-width:100%;
+}
+.description {
+    margin: 0 0  0 20%;
+}
+#content article {
+  display: flex;
+  justify-content: space-around;
+}
 img.align-right {
- float: right;
+ /*float: right;
  margin-left: 5%;
- z-index: 1;
+ z-index: 1;*/
 }
 article.thisclass {
     position: relative;
-    top: 160px;
+    top: 10%;
     ;
 }
 article.otherclass {
     position: relative;
-    top: 160px;
+    top: 10%;
 }
 footer {
     position: relative;
-    top: 233px;
+    top: 15%;
     text-align: center;
     margin: auto 0;
 
@@ -62,14 +105,14 @@ ul li {
 }
 #projects {
     position: relative;
-    top: 140px;
+    top: 12%;
     
 }
 article.thisclass img {
-    width: ;
+   /* width: ;
     height: ;
     object-fit: tain;
-    margin: 10px auto;
+    margin: 0.07% auto;*/
 }
 .container {
     margin: 0 auto;
@@ -92,11 +135,9 @@ article.thisclass img {
     max-width: 100%;
 }
 #secondturtle {
-    float: right;
-    margin-left: 5%;
-    position: relative;
-    bottom: 0px;
-    z-index: 0;
+    
+    
+ 
     display: none;
 
 }
