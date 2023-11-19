@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: aqua;
+    font-size: 100%;
+}
+header {
+    
 }
 header h1 {
     font-weight: bold;
@@ -55,6 +59,8 @@ div.turtlecontainer {
     margin: 0 0 0 0 ;
     max-width: 100%;
     padding: 0;
+    min-width: 50%;
+    
     
 }
 .turtlecontainer img {
@@ -68,11 +74,15 @@ img #firstturtle {
 }
 img #secondturtle {
     width:100%;
-    object-fit: contain;
-    max-width:100%;
+    
+    
+}
+div#content {
+    margin: 10% auto;
+    
 }
 .description {
-    margin: 0 0  0 20%;
+    margin: 0 0  0 5%;
 }
 #content article {
   display: flex;
@@ -83,12 +93,12 @@ img.align-right {
  margin-left: 5%;
  z-index: 1;*/
 }
-article.thisclass {
+/*article.thisclass {
     position: relative;
     top: 10%;
     ;
-}
-article.otherclass {
+}*/
+/*article.otherclass {
     position: relative;
     top: 10%;
 }
@@ -98,12 +108,12 @@ footer {
     text-align: center;
     margin: auto 0;
 
-}
+}*/
 ul li {
     display: inline-block;
     padding-right: 4%;
 }
-#projects {
+/*#projects {
     position: relative;
     top: 12%;
     
@@ -127,9 +137,16 @@ article.thisclass img {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 2.5%;
 }
 .col img {
     max-width: 100%;
+    max-width: 500px;
+    margin-bottom: 5%;
+}
+.col p {
+    max-width: 100%;
+    max-width: 500px;
 }
 .turtlecontainer img {
     max-width: 100%;
