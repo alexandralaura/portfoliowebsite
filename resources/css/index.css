@@ -12,6 +12,7 @@ header h1 {
     width: 50%;
     padding-top: 20px;
     padding-bottom: 10%;
+    font-size: 2em;
 }
 header h1 #howdy {
     width: 50%;
@@ -27,12 +28,13 @@ header nav {
     padding-top: 2.5%;
    position: relative;
    top: 1.3%;
-   width: 30%;
+   width: 40%;
 }
 header nav li {
     display: inline-block;
     padding-right: 0.6% ;
     font-weight: 900;
+    font-size: 1.25em;
 
 }
 header {
@@ -175,3 +177,59 @@ div.lastone {
     justify-content: center;
     margin: 3%;
 }
+@media only screen and (max-width : 1496px) {
+    nav ul li {
+        font-size: 1em;
+    }
+    
+}
+@media only screen and (max-width: 1460px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 1174px) {
+    header h1 {
+        font-size: 1.4em;
+    }
+}
+@media only screen and (max-width: 1126px) {
+    nav ul li {
+        font-size: 0.5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
