@@ -158,3 +158,20 @@ article.thisclass img {
     display: none;
 
 }
+h2#skills {
+    margin: 5% 5% 5% 0%;
+}
+footer {
+    margin: 5%
+    display: flex;
+    justify-content: center;
+}
+ul.list {
+    display: flex;
+    
+}
+div.lastone {
+    display:flex;
+    justify-content: center;
+    margin: 3%;
+}
