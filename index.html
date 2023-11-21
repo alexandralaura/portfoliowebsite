@@ -6,6 +6,14 @@
     <title>Document</title>
     <link href="resources/css/index.css" type="text/css" rel="stylesheet" />
     <script src="resources/script.js" async></script>
+    <link rel="stylesheet" href="resources/css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+    </script>
 </head>
 <body>
     <div id="page">
