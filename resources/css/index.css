@@ -196,10 +196,42 @@ div.lastone {
 }
 @media only screen and (max-width: 1126px) {
     nav ul li {
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
 }
+@media only screen and (max-width: 1037px) {
+    header nav {
+        width: 50%;
 
+    }
+    h1#howdy {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 834px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav ul {
+        padding-left: 0;
+        text-align: center;
+    }
+    h1#howdy {
+        padding-bottom: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:739px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav ul li {
+        font-size: 1.1em;
+    }
+}
 
 
 
