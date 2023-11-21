@@ -4,6 +4,9 @@ body {
     background-color: aqua;
     font-size: 100%;
 }
+#mobile_menu {
+    display: none;
+}
 header {
     
 }
@@ -231,6 +234,21 @@ div.lastone {
     nav ul li {
         font-size: 1.1em;
     }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    
+    #content article {
+       display: flex;
+       flex-direction: column;
+    }
+    .turtlecontainer {
+        margin-bottom: 2%;
+    }    
+
 }
 
 
